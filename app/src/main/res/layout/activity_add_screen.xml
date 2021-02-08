@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgk_screen1"
+    tools:context=".AddScreen">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profileIv"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_round_add_a_photo_24"
+        app:c_border="true"
+        app:c_background_color="@color/purple_200"
+        app:c_border_width="1dp"
+        app:c_border_color="#E4979797" />
+
+    <EditText
+        android:id="@+id/foodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_below="@+id/profileIv"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Food Name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"/>
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/foodName"
+
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        />
+
+    <EditText
+
+        android:id="@+id/foodType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Type: Drinks, Bread, Cookies, Cake "
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/foodIng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_below="@+id/foodType"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:maxHeight="130dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Ingredients eg:\n 1/2g Milk\n 5g Sugar "
+        android:inputType="textMultiLine"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/foodDesc"
+        android:minHeight="90dp"
+        android:maxHeight="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_below="@+id/foodIng"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Food Preparation "
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:padding="10dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_done"
+        android:backgroundTint="@color/purple_200"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+
+
+</RelativeLayout>

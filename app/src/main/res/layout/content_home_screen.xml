@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="28dp"
+    app:cardBackgroundColor="#00FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A8FFEAE3">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_food"
+            app:c_border="true"
+            app:c_border_color="@color/purple_700"
+            app:c_border_width="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/profileIv"
+            android:layout_toRightOf="@+id/profileIv"
+            android:layout_toStartOf="@+id/moreBtn"
+            android:layout_toLeftOf="@+id/moreBtn"
+            tools:ignore="NotSibling">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Name"
+                android:autoSizeTextType="uniform"
+                android:paddingVertical="5dp"
+                android:textAlignment="center"
+                android:background="@drawable/shape_rectangle1"
+                android:layout_marginVertical="25dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:paddingHorizontal="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:src="@drawable/ic_more" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

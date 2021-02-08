@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bgk_screen2"
+    tools:context=".RecordDetailScreen">
+
+
+    <ImageView
+        android:id="@+id/profileIv"
+        android:layout_width="296dp"
+        android:layout_height="232dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/ic_food_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="253dp"
+        android:layout_height="456dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileIv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Food Name"
+                android:textSize="30dp"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/architects_daughter"
+                android:textSize="20dp"
+                android:text="Ingredients :"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/ingTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:fontFamily="@font/cairo_extralight"
+                android:text="Food Ingredients"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/architects_daughter"
+                android:textSize="20dp"
+                android:text="Food Preparation :"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/descTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="5dp"
+                android:layout_marginBottom="70dp"
+                android:text="Food Description"
+                android:fontFamily="@font/cairo_extralight"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
